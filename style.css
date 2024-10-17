@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 2;
-    position: relative;
+    position: relative; /* для позиционирования кнопки внутри контейнера */
 }
 
 .profile {
@@ -255,7 +255,7 @@ footer p {
     }
 }
 
-/* Фиксированная кнопка "Resume" под изображением */
+/* Стилизация кнопки Resume */
 .resume-btn {
     background-color: #ff4c4c;
     color: white;
@@ -265,11 +265,11 @@ footer p {
     border-radius: 25px;
     text-align: center;
     width: 100%;
-    position: absolute;
-    bottom: -50px; /* отступ от нижней части контейнера */
-    z-index: 3;
+    margin-top: 20px; /* отступ сверху */
     cursor: pointer;
     transition: background-color 0.3s ease;
+    position: relative; /* нужно для правильного выравнивания */
+    z-index: 3;
 }
 
 .resume-btn:hover {
