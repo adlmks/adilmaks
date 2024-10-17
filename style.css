@@ -18,11 +18,11 @@ body {
 
 .container {
     background-color: rgba(44, 47, 51, 0.85);
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
     text-align: left;
-    width: 600px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -36,8 +36,8 @@ body {
 
 .profile-img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     margin-right: 15px;
     align-self: flex-start;
@@ -50,7 +50,7 @@ body {
 
 .download-link {
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none;
     border: 2px solid white;
@@ -62,7 +62,6 @@ body {
     transform: translateY(-70%);
 }
 
-
 .download-link:hover {
     background-color: white;
     color: black;
@@ -71,19 +70,17 @@ body {
 
 .download-link:active {
     background-color: white;
-    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
 h1 {
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
     margin-bottom: 5px;
 }
 
 p {
-    font-size: 14px;
+    font-size: 13px;
     color: #ccc;
 }
 
@@ -100,20 +97,20 @@ p {
     background-color: #54627b;
     color: white;
     text-decoration: none;
-    padding: 12px;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 8px 0;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .link img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
 
 .link span {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .link:hover {
@@ -136,11 +133,10 @@ footer {
 }
 
 footer p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
-/* ANIMATED BACKGROUND START */
-
+/* Анимация фоновых кругов */
 .area {
     background: #4e54c8;
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
@@ -167,8 +163,8 @@ footer p {
     display: block;
     list-style: none;
     border-radius: 20px;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
@@ -176,53 +172,53 @@ footer p {
 
 .circles li:nth-child(1) {
     left: 25%;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     animation-delay: 0s;
 }
 
 .circles li:nth-child(2) {
     left: 10%;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     animation-delay: 2s;
     animation-duration: 12s;
 }
 
 .circles li:nth-child(3) {
     left: 70%;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     animation-delay: 4s;
 }
 
 .circles li:nth-child(4) {
     left: 40%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     animation-delay: 0s;
     animation-duration: 18s;
 }
 
 .circles li:nth-child(5) {
     left: 65%;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     animation-delay: 0s;
 }
 
 .circles li:nth-child(6) {
     left: 75%;
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
     animation-delay: 3s;
 }
 
 .circles li:nth-child(7) {
     left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
+    width: 120px;
+    height: 120px;
+    animation-delay: 6s;
 }
 
 .circles li:nth-child(8) {
@@ -230,7 +226,6 @@ footer p {
     width: 25px;
     height: 25px;
     animation-delay: 15s;
-    animation-duration: 45s;
 }
 
 .circles li:nth-child(9) {
@@ -238,7 +233,6 @@ footer p {
     width: 15px;
     height: 15px;
     animation-delay: 2s;
-    animation-duration: 35s;
 }
 
 .circles li:nth-child(10) {
@@ -251,31 +245,11 @@ footer p {
 
 @keyframes animate {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
     }
     100% {
-        transform: translateY(-1500px) rotate(720deg);
-    }
-}
-
-/* ANIMATED BACKGROUND END */
-
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .profile-img {
-        width: 80px;
-        height: 80px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .links a span {
-        font-size: 14px;
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
     }
 }
