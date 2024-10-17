@@ -286,8 +286,14 @@ footer p {
 
 @media (max-width: 480px) {
     .resume-btn {
-        font-size: 12px;
-        padding: 8px 12px;
+        font-size: 10px;
+        padding: 8px 10px;
     }
 }
 
+@media (max-width: 360px) {
+    .resume-btn {
+        font-size: 9px;
+        padding: 6px 8px;
+    }
+}
