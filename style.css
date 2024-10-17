@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 2;
-    position: relative; /* для позиционирования кнопки внутри контейнера */
+    position: relative;
 }
 
 .profile {
@@ -284,6 +284,11 @@ footer p {
 
 /* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 10px;
+    }
+    
     .download-link {
         font-size: 12px;
         padding: 6px 12px;
@@ -291,6 +296,11 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin: 0 10px;
+    }
+    
     .download-link {
         font-size: 10px;
         padding: 4px 8px;
@@ -298,6 +308,11 @@ footer p {
 }
 
 @media (max-width: 360px) {
+    .container {
+        width: 90%;
+        margin: 0 10px;
+    }
+    
     .download-link {
         font-size: 8px;
         padding: 3px 6px;
