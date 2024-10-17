@@ -255,7 +255,7 @@ footer p {
     }
 }
 
-/* Стилизация кнопки Resume */
+/* Стиль для кнопки Resume */
 .resume-btn {
     background-color: #ff4c4c;
     color: white;
@@ -265,13 +265,29 @@ footer p {
     border-radius: 25px;
     text-align: center;
     width: 100%;
-    margin-top: 20px; /* отступ сверху */
+    margin-top: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: relative; /* нужно для правильного выравнивания */
+    position: relative;
     z-index: 3;
 }
 
 .resume-btn:hover {
     background-color: #ff0000;
 }
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    .resume-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
